@@ -8,8 +8,11 @@ package StringTokenizerPkg;
 public class StringTokenizer {
     
         public static void main(String[] args) {
+            //the string being manipulated
             String line = "In my opinion, Computer Science is the best!";
             StringTokenizer t = new StringTokenizer();
+            
+            //calling the methods
             t.tokenizeSplit(line, 'i');
             System.out.println("Space");
             t.tokenize(line, ' ');
@@ -22,7 +25,6 @@ public class StringTokenizer {
            for(String splits : split){
                System.out.println(splits);
            }
-           
            return split;
        }
        
